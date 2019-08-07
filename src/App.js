@@ -6,19 +6,18 @@ function App() {
   return (
     <div className="App">
       <img src={mrRobotLogo} alt='Mr. Robot is an American drama thriller television series created by Sam Esmail'/>
-          <h1>Welcome to Kodflix!</h1>
-        <td>
-          <tr>
-            <li>Black Mirror</li>
-            <li>Breaking Bad</li>
-            <li>Deadh Note</li>
-          </tr>
-          <tr>
-            <li>Game of Thrones</li>
-            <li>The Walking Dead</li>
-            <li>The Wire</li>
-          </tr>
-        </td>
+          <br /> <br /> <br />
+        <div className='container'>
+          <div className='item'>Black Mirror</div>
+          <div className='item'>Breaking Bad</div>
+          <div className='item'>Deadh Note</div>
+        </div>  
+        <div className='container'>
+          <div className='item'>Game of Thrones</div>
+          <div className='item'>The Walking Dead</div>
+          <div className='item'>The Wire</div>
+        </div>
+
     </div>
   );
 }

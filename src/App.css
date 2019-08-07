@@ -5,3 +5,11 @@
 img {
   width: 70%;
 }
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
