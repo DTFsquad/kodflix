@@ -2,14 +2,11 @@
   text-align: center;
 }
 
-img {
-  width: 70%;
-}
-
 .container {
   display: flex;
 }
 
 .item {
   flex: 1;
+  padding: 30px;
 }
