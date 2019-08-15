@@ -16,21 +16,44 @@ function App() {
         <div className='container'>
           <div className='item'>
             <img src={blackmirror} alt='Black Mirror movie cover'/>
+              <div className='overlay'>
+                <h1>Black Mirror</h1>
+              </div>
           </div>
           <div className='item'>
-            <img src={breakingBad} alt='Breaking Bad movie cover'/></div>
+            <img src={breakingBad} alt='Breaking Bad movie cover'/>
+            <div className='overlay'>
+                <h1>Breaking Bad</h1>
+              </div>
+            </div>  
           <div className='item'>
-            <img src={deathNote} alt='Deadh Note movie cover'/></div>
+            <img src={deathNote} alt='Deadh Note movie cover'/>
+              <div className='overlay'>
+                <h1>Death Note</h1>
+              </div>
+          </div>
         </div>  
         <div className='container'>
           <div className='item'>
-            <img src={gameOfTrones} alt='Game of Thrones movie cover'/></div>
+            <img src={gameOfTrones} alt='Game of Thrones movie cover'/>
+              <div className='overlay'>
+                <h1>Games of Trones</h1>
+              </div>
+            </div>
           <div className='item'>
-            <img src={walkingDead} alt='The Walking Dead movie cover'/></div>
+            <img src={walkingDead} alt='The Walking Dead movie cover'/>
+            <div className='overlay'>
+                <h1>Walking Dead</h1>
+            </div>
+          </div>
           <div className='item'>
-            <img src={theWire} alt='The Wire movie cover'/></div>
+            <img src={theWire} alt='The Wire movie cover'/>
+            <div className='overlay'>
+                <h1>The Wire</h1>
+            </div>
+          </div>
+              
         </div>
-
     </div>
   );
 }
