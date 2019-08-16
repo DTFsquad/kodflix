@@ -1,4 +1,5 @@
 import React from 'react';
+import Movie from './Movie';
 import mrRobotLogo from './mrRobot.jpeg';
 import blackmirror from './images/blackMirror.jpeg';
 import breakingBad from './images/breakingBad.jpeg';
@@ -9,53 +10,25 @@ import theWire from './images/theWire.jpeg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <img src={mrRobotLogo} alt='Mr. Robot is an American drama thriller television series created by Sam Esmail'/>
-          <br /> <br /> <br />
-        <div className='container'>
-          <div className='item'>
-            <img src={blackmirror} alt='Black Mirror movie cover'/>
-              <div className='overlay'>
-                <h1>Black Mirror</h1>
-              </div>
-          </div>
-          <div className='item'>
-            <img src={breakingBad} alt='Breaking Bad movie cover'/>
-            <div className='overlay'>
-                <h1>Breaking Bad</h1>
-              </div>
-            </div>  
-          <div className='item'>
-            <img src={deathNote} alt='Deadh Note movie cover'/>
-              <div className='overlay'>
-                <h1>Death Note</h1>
-              </div>
-          </div>
-        </div>  
-        <div className='container'>
-          <div className='item'>
-            <img src={gameOfTrones} alt='Game of Thrones movie cover'/>
-              <div className='overlay'>
-                <h1>Games of Trones</h1>
-              </div>
-            </div>
-          <div className='item'>
-            <img src={walkingDead} alt='The Walking Dead movie cover'/>
-            <div className='overlay'>
-                <h1>Walking Dead</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={theWire} alt='The Wire movie cover'/>
-            <div className='overlay'>
-                <h1>The Wire</h1>
-            </div>
-          </div>
-              
-        </div>
-    </div>
-  );
+	return (
+		<div className="App">
+			<img
+				src={mrRobotLogo}
+				alt={'Mr. Robot is an American drama thriller television series created by Sam Esmail'}
+			/>
+			<br /> <br /> <br />
+			<div className="container">
+				<Movie name="Black Mirror" logo={blackmirror} />
+				<Movie name="Breaking Bad" logo={breakingBad} />
+				<Movie name="Deadh Note" logo={deathNote} />
+			</div>
+			<div className="container">
+				<Movie name="Game of Thrones" logo={gameOfTrones} />
+				<Movie name="The Walking Dead" logo={walkingDead} />
+				<Movie name="The Wire" logo={theWire} />
+			</div>
+		</div>
+	);
 }
 
 export default App;
