@@ -3,11 +3,15 @@
 }
 
 .container {
-  display: flex;
+  /*display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .item {
-  flex: 1;
+  /* flex: 1;
+  flex-basis: 100px; */
   padding: 30px;
   border: 1px solid white;
   position: relative;
@@ -15,22 +19,16 @@
 }
 
 .overlay {
-  transition: bottom ease 1s;
+  display: none;
   position: absolute;
-  bottom: -100px;
+  bottom: 0;
   left:0;
   width: 100%;
   background-color: burlywood;
-  opacity: 0.6;
+  opacity: 0.8;
+  color: blueviolet;
 }
 
 .item:hover .overlay {
-  opacity: 0.6;
-  bottom: 0;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
+  display: block;
 }
