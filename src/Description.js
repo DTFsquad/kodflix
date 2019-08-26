@@ -21,8 +21,8 @@ export default class Description extends Component {
 	render() {
 		return (
 			<div>
-				<h1>(this.state.welcomeMessage)</h1>
-				<Link to="./">Back to home page</Link>
+				<h1>{this.state.welcomeMessage}</h1>
+				<Link to="/">Back to home page</Link>
 			</div>
 		);
 	}
