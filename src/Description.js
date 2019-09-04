@@ -8,13 +8,13 @@ export default class Description extends Component {
 		super();
 		this.state = {
 			gallery: {}
-		}
+		};
 	}
 
 	componentDidMount() {
 		let galleryId = this.props.match.params.galleryId;
 		let gallery = getGallery()
-			.find((gallery) => gallery.Id === galleryId);
+			.find((gallery) => gallery.id === galleryId);
 		this.setState({ gallery });
 	}
 
