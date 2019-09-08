@@ -1,0 +1,14 @@
+.Description .container {
+display: flex;
+}
+
+.Description .container .text,
+.Description .container .image {
+    padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Description .container {
+        flex-direction: column;
+    }
+  }
