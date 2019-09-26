@@ -1,4 +1,4 @@
-.Description .container {
+/* .Description .container {
 display: flex;
 }
 
@@ -9,6 +9,35 @@ display: flex;
 
 @media only screen and (max-width: 600px) {
     .Description .container {
-        flex-direction: column;
+        flex-direction: column; 
+        display: block;
     }
   }
+*/
+
+
+.description-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+  }
+
+.description-container-image {
+    max-width: 400px;
+}
+
+.description-container-text {
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .description-container {
+        display: block;
+    }
+
+    .description-container-image img {
+        max-width: 100%;
+    }
+    
+}

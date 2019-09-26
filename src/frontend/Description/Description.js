@@ -20,23 +20,25 @@ export default class Description extends Component {
 	}
 
 	render() {
-		if(this.state.gallery === undefined) { 
+		if (this.state.gallery === undefined) {
 			return <Redirect to='/not-found' />;
 		} else {
 			return (
-				<div className='Description'>
+				<div className="description">
 					<h1>{this.state.gallery.name}</h1>
-					<div className='container' >
-						<div className='text'>{this.state.gallery.details}</div>
-						<img 
-							className='image'
-							src={this.state.gallery.logo}
-							alt={this.state.gallery.name} />
+					<div className="description-container">
+						<h3 className="description-container-text">{this.state.gallery.details}</h3>
+						<div className="description-container-image">
+							<img
+								src={this.state.gallery.logo}
+								alt={this.state.gallery.name} />
+						</div>
 					</div>
+					<br />
 					<Link to="/">Back to home page</Link>
-				</div>
+				</div >
 			);
 		}
-		
+
 	}
 }
