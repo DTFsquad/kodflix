@@ -1,5 +1,5 @@
 const express = require('express');
-const shows = require('./rest/shows');
+const shows = require('./shows');
 const app = express();
 const port = 3000
 
